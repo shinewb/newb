@@ -10,11 +10,26 @@ function setLS (text) {
 	localStorage.setItem(USERNAME_JS,text);
 }
 
-function showTime() {
+function getPrettyTime() {
 	const nowTime = new Date();
 	const hours = nowTime.getHours();
 	const mins = nowTime.getMinutes();
-	clock.innerText = `${hours<10?`0${hours}`:hours}:${mins<10?`0${mins}`:mins}`;
+
+	let prettyStr = ""
+	if (hours < 12) {
+		prettyStr = `${hours<10?`0${hours}`:hours}:${mins<10?`0${mins}`:mins} AM`
+	} else {
+		prettyStr = `${hours-12||12}:${mins<10?`0${mins}`:mins} PM`
+	}
+	return prettyStr
+}
+
+function showTime() {
+	// const nowTime = new Date();
+	// const hours = nowTime.getHours();
+	// const mins = nowTime.getMinutes();
+	// clock.innerText = `${hours<10?`0${hours}`:hours}:${mins<10?`0${mins}`:mins}`;
+	clock.innerText = getPrettyTime() // `${hours<10?`0${hours}`:hours}:${mins<10?`0${mins}`:mins}`;
 }
 
 function greetingUser(text) {
