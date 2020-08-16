@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Teko&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="card">
+		<div><h1 class="js-clock clock">Welcome to your space.</h1></div>
+			<form class="js-nameForm nameForm">
+				Tell me your name.<br>
+				<input class="name-input" type="text" style="text-align:center;">
+			</form>
+			<div class="js-greeting greeting"></div>
+		<span class="js-weather"></span>
+	</div>
+	<div class="toDoBtn"><button>📝</button></div>
+	<div class="secondCard">
+		<div class="toDo">
+			<form class="js-askToDo askToDo">
+				<input type="text" placeholder="Add To-do list" style="text-align:center;">
+			</form>
+		</div>
+		<ul class="js-toDoList">
+		</ul>
+	</div>
+<script src="greeting.js"></script>
+<script src="bg.js"></script>
+<script src="weather.js"></script>
+<script src="toDo.js"></script>
+</body>
+</html>
