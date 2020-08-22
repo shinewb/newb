@@ -110,6 +110,21 @@ input:hover {
 	animation-fill-mode: forwards;
 }
 
+.secondCard {
+	background-color: black;
+	position: relative;
+	top: -175px;
+	left: 245px;
+    margin: auto;
+	width:230px;
+	min-height:280px;
+	padding-bottom: 1rem;
+	opacity: 70%;
+	border-radius: 10px;
+	text-align: center;
+	z-index: 1;
+}
+
 .toDoBtn {
 	background-color: black;
 	border-radius: 6px;
@@ -121,20 +136,6 @@ input:hover {
 	left: 153px;
 	text-align: center;
 	z-index: 2;
-}
-
-.secondCard {
-	background-color: black;
-	position: relative;
-	top: -175px;
-	left: 245px;
-    margin: auto;
-	width:230px;
-	height:300px;
-	opacity: 70%;
-	border-radius: 10px;
-	text-align: center;
-	z-index: 1;
 }
 
 .toDoBtn button {
@@ -165,4 +166,6 @@ input:hover {
 .js-toDoList {
 	position: relative;
 	top: 35px;
+	padding-right: 0.8rem;
+	word-break: keep-all;
 }
